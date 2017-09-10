@@ -1,0 +1,131 @@
+title {
+	display: none;
+}
+
+html, body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	font-size: 1rem;
+}
+
+header div {
+	/*position: fixed;*/
+	font-family: Varela Round;
+}
+
+#headerContainer {
+	width: 100%;
+	height: 7%;
+	/*border-bottom: 1px solid black;*/
+	display: flex;
+	align-items: center;
+	background: rgba(0,0,0,0.95);
+}
+
+.headerText {
+	display: inline-block;
+	vertical-align: top;
+	color: white;
+	padding-left: 10.75%;
+}
+
+.stackedText {
+	font-size: 2vmax;
+}
+
+#headerTextBold {
+	padding-left: 0%;
+	font-size: 4vmax;
+}
+
+#headerContainer span:nth-child(2) {
+	margin-left: 15px;
+	font-size: 200%;
+}
+
+h2 {
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.grid {
+  width: 80%;
+  margin: auto;
+  padding-top: 2%;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+img {
+  max-width: 95%;
+  margin-left: 2.5%;
+  margin-right:2.5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.imgContainer {
+	position: relative;
+	margin: auto;
+    /*Give relative position so that text box appears in middle of parent div*/
+}
+
+.middle {
+	position: absolute;
+	opacity: 0;
+	transition: .5s ease;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	margin: auto;
+	color: white;
+	width: 80%;
+	height: 80%;
+	border: solid 3px rgba(0,0,0,0.7);
+}
+
+.caption {
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	text-align: center;
+	background: rgba(0,0,0,0.7);
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-family: Varela Round;
+	vertical-align: middle;
+	overflow: auto;
+	/* Props to https://www.youtube.com/watch?v=hIG-fZ2042k for helping center this! */
+}
+
+
+
+.imgContainer:hover img{
+	-webkit-filter: blur(5px);
+	transition: .5s ease;
+}
+
+.imgContainer:hover .middle {
+	opacity: 1;
+	transition: .75s ease;
+}
+
+@media screen and (max-width: 700px) {
+	.column{
+		width: 50%;
+	}
+}
+
+
+
+
+
+
